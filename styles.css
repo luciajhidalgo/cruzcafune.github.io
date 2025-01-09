@@ -1,0 +1,626 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto; 
+    font-weight: 600;
+    font-style: normal;
+    overflow-x: hidden;
+}
+
+video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.capa {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1c1c1d;
+    opacity: 0.5;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+    background: transparent;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    padding: 2em;
+}
+
+
+
+.menu {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.main {
+    margin: 0 auto;
+    width: 80vw;
+    height: 80vh;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.escucha-blues {
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto; 
+    font-weight: 600;
+    font-style: normal;
+    overflow-x: hidden;
+    cursor: pointer;
+    margin-top: -20px;
+}
+
+.escucha-blues:hover {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.main img {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+    object-position: center;
+}
+
+.bio {
+    background-color: #1c1c1d56;
+    display: grid;
+    grid-template-columns: repeat(10);
+    width: 100vw;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.bio img {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+    object-position: center;
+    grid-column: 1/5;
+}
+
+.bio-info {
+    grid-column: 5/10;
+    padding: 4em;
+    color: #fff;
+}
+
+.bio-info p {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 1em;
+    text-align: justify;
+}
+
+.divider {
+    height: 3px;
+    width: 100px;
+    background-color: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.musica {
+    background: transparent;
+    width: 100%;
+    padding: 3em;
+    position: relative;
+    z-index: 2;
+}
+
+.section-title {
+    color: #fff;
+    font-size: 3em;
+    margin-top: -20px;
+    margin-bottom: 10px;
+}
+
+.container-one {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.container-two {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 20px;
+
+}
+
+.spotify-section {
+    width: 60%;
+}
+
+.videos {
+    background: transparent;
+    width: 100%;
+    padding: 3em;
+    position: relative;
+    z-index: 2;
+}
+
+.section-title-v2 {
+    color: #fff;
+    font-size: 3em;
+    justify-items: right;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+.clips img {
+    width: 100%;
+    border-radius: 12px;
+
+}
+
+.clips a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.fila-videos {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.clips a:hover {
+    text-decoration: underline;
+
+}
+
+.conciertos {
+    background-color: #1c1c1d56;
+    width: 100%;
+    padding: 3em;
+    position: relative;
+    z-index: 2;
+}
+
+.all-tickets {
+    display: grid;
+    place-items: center;
+    margin-top: 20px;
+}
+
+.container-tickets {
+    background-color: #fff;
+    width: 50vw;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.tickets {
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #000;
+    border: 2px solid transparent;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto; 
+    font-weight: 600;
+    font-style: normal;
+    overflow-x: hidden;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.tickets:hover {
+    background-color: transparent;
+    border: 2px solid #000;
+    color: #000; 
+}
+
+.ver-todos {
+    display: grid;
+    place-items: center;
+}
+
+.ver-todos-los-videos {
+    padding: 10px 20px;
+    color: #000;
+    background-color: #fff;
+    border: 2px solid transparent;
+    border-radius: 40px;
+    transition: all 0.3s ease;
+    font-size: 20px;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto; 
+    font-weight: 600;
+    font-style: normal;
+    overflow-x: hidden;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.ver-todos-los-videos:hover {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff; 
+}
+
+footer {
+    left: 0;
+    padding: 1em;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+}
+
+.redes-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.iconos {
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    background-image: url(media/instagram.png);
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    margin: 1em;
+    transition: all 0.3s ease;
+}
+
+.iconos:hover {
+    background-color: #000;
+    filter: invert(1);
+}
+
+.iconos:nth-of-type(2) {
+    background-image: url(media/x.png);
+}
+
+.iconos:nth-of-type(3) {
+    background-image: url(media/spotify.png);
+}
+
+.iconos:nth-of-type(4) {
+    background-image: url(media/youtube.png);
+}
+
+.iconos:nth-of-type(5) {
+    background-image: url(media/tik-tok.png);
+}
+
+.footer-content {
+    text-align: center;
+    color: #fff;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 1em;
+}
+
+.footer-content p {
+    font-size: small;
+    margin-top: 10px;
+}
+
+.contactar {
+    display: grid;
+    grid-template-columns: repeat(10);
+    width: 100vw;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.container-contact img {
+    width: 50vw;
+    object-fit: scale-down;
+    object-position: center;
+    grid-column: 1/5;
+}
+
+.container-contact {
+    padding: 3em;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.contact-form {
+    color: #fff;
+    margin: 5em;
+    grid-column: 5/10;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    margin-top: 2em;
+}
+
+.form input {
+    padding: 10px 20px;
+    margin-bottom: 1em;
+    background: none;
+    border: none;
+    border-bottom: 3px solid #fff;
+    color: #fff;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 1em;
+    text-align: justify;
+    outline: none;
+}
+
+.input:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.form textarea {
+    height: 150px;
+    background: none;
+    color: #fff;
+    padding: 1.5em;
+    border: 3px solid #fff;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 1em;
+    text-align: justify;
+    border-radius: 12px;
+    outline: none;
+}
+
+.btn-submit {
+    padding: 10px 20px;
+    margin: 1em;
+    border: none;
+    text-transform: uppercase;
+    background-color:#fff;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto; 
+    font-weight: 600;
+    font-style: normal;
+    overflow-x: hidden;
+}
+
+.btn-submit:hover {
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff; 
+}
+
+.abrir-menu {
+    display: none;
+}
+
+.cerrar-menu {
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    
+    .abrir-menu {
+        display: block;
+        border: 0;
+        font-size: 2rem;
+        background-color: transparent;
+        cursor: pointer;
+        color: #fff;
+        display: flex;
+        position: absolute;
+        align-items: end;
+        top: 0;
+        right: 0;
+        padding: 2rem;
+    }
+
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 2rem;
+        background-color: transparent;
+        cursor: pointer;
+        color: #fff;
+    }
+
+    .navbar {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        align-items: center;
+        gap: 2rem;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #000000c6;
+        width: 100vw;
+        z-index: 3;
+    }
+
+    .navbar.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .main {
+        width: 90vw;
+        height: 90vh;
+    }
+
+    .bio {
+        grid-template-columns: 1fr; 
+        padding: 2em;
+    }
+
+    .bio img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        grid-column: 1; 
+    }
+
+    .bio-info {
+        grid-column: 1;
+        padding: 1em;
+    }
+
+    .musica .container-one,
+    .musica .container-two {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .spotify-section {
+        width: 100%;
+        border-radius: 12px;
+    }
+
+    .videos .fila-videos {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .clips {
+        width: 100%;
+        text-align: center;
+    }
+
+    .conciertos .all-tickets {
+        display: block;
+        padding: 0;
+    }
+
+    .container-tickets {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    .container-contact {
+        flex-direction: column;
+    }
+
+    .container-contact img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        grid-column: 1; 
+    }
+
+    .contact-form {
+        grid-column: 1;
+        
+    }
+
+    .form {
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .section-title {
+        font-size: 2em;
+    }
+
+    .section-title-v2 {
+        font-size: 2em
+    }
+
+    .redes-container {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    footer {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-content {
+        margin-top: 10px;
+    }
+    
+}
